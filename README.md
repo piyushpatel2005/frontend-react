@@ -18,4 +18,11 @@ cd confusion
 yarn start
 ```
 
+The component is React is actually a class that extends Component class from react module. This class contains `render()` method which actually returns the html that is displayed on the UI.
+
+**JSX** is actually similar to JavaScript. So, we have to use *className* rather than *class* to specify class attribute for html element. 
+
+`ReactDOM.render(<App/>, document.getElementById('root'));` 
+This statement specifies where the App component will be rendered.
+
 
