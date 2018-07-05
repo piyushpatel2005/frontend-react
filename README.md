@@ -7,6 +7,7 @@ React is a JS library for building user interfaces. It is declarative in nature 
 - Node v8.11.1
 - npm v5.6.0
 - yarn v1.7.0
+- React 16.3
 
 ```shell
 npm install -g create-react-app@1.5.2
@@ -31,5 +32,13 @@ Each React component should be named with uppercase letter. Each react component
 In JSX, attributes are passed into a component as a single object. If we have attribute `dishes` in parent component, the same can be accessed through child component as `this.props.dishes`.
 
 To handle event, we create event handler functions as `<Card onClick={() => this.onDishSelect(dish)}>`
-We need to pass the state to parent component so that all siblings have same state.
+We need to pass the state to parent component so that all siblings have same state. This can be done on an event by passing the property to the parent.
 
+Every class component has lifecycle associated with it. React component goes through following lifecycle stages
+- mounting
+- updating
+- unmounting
+
+There are lifecycle methods available in each stage.
+In the mounting stage, constructor, getDerivedStateFromProps, render, componentDidMount methods are called.
+In the updating 
